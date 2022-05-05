@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+//:((
 
 public class MarkdownParse {
 
@@ -15,7 +16,7 @@ public class MarkdownParse {
             int openBracket = markdown.indexOf("[", currentIndex);
             int closeBracket = markdown.indexOf("]", openBracket);
             int exclamation = markdown.indexOf("!", closeBracket);
-            int openParen = markdown.indexOf("(", currentIndex);
+            int openParen = markdown.isndexOf("(", currentIndex);
             int closeParen = markdown.indexOf(")", openParen);
             if(openParen != -1 && closeParen != -1){
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
